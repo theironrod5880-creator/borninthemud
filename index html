@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Born In The Mud - Project Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card-bg: #1a1d24;
+    --gold: #d4af37;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --border: #2d3748;
+  }
+  
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg); 
+    color: var(--text-main); 
+    margin: 0; 
+    padding: 20px; 
+    line-height: 1.6;
+  }
+
+  h1 {
+    text-align: center;
+    color: var(--gold);
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+  }
+
+  .section-title {
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    text-decoration: none;
+    color: var(--text-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+
+  .card:active, .card:hover {
+    background-color: #232730;
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+
+  .card-title {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .card-desc {
+    display: block;
+    font-size: 0.85em;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  .badge {
+    background-color: rgba(212, 175, 55, 0.2);
+    color: var(--gold);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .private-badge {
+    background-color: rgba(220, 38, 38, 0.2);
+    color: #f87171;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Born In The Mud</h1>
+  <div class="subtitle">Project Dashboard &bull; The Architecture of Sacred Time</div>
+
+  <!-- SCRIPTS SECTION -->
+  <div class="section-title">Audio Scripts & Direction</div>
+  <div class="grid">
+    <a href="./scripts/ep1_directed_script.txt" class="card">
+      <div>
+        <span class="card-title">Episode 1</span>
+        <span class="card-desc">Born in the Mud (Suno Script)</span>
+      </div>
+      <span class="badge">SCRIPT</span>
+    </a>
+
+    <a href="./scripts/ep2_directed_script.txt" class="card">
+      <div>
+        <span class="card-title">Episode 2</span>
+        <span class="card-desc">God Rules Time (Suno Script)</span>
+      </div>
+      <span class="badge">SCRIPT</span>
+    </a>
+
+    <a href="./scripts/ep3_part1.txt" class="card">
+      <div>
+        <span class="card-title">Episode 3, Part 1</span>
+        <span class="card-desc">The Quick Summary</span>
+      </div>
+      <span class="badge">SCRIPT</span>
+    </a>
+
+    <a href="./scripts/ep3_part2.txt" class="card">
+      <div>
+        <span class="card-title">Episode 3, Part 2</span>
+        <span class="card-desc">Building the Line Backward</span>
+      </div>
+      <span class="badge">SCRIPT</span>
+    </a>
+
+    <a href="./scripts/ep3_part3.txt" class="card">
+      <div>
+        <span class="card-title">Episode 3, Part 3</span>
+        <span class="card-desc">The Conclusion of the Timetable</span>
+      </div>
+      <span class="badge">SCRIPT</span>
+    </a>
+
+    <a href="./scripts/suno_style_guides.txt" class="card">
+      <div>
+        <span class="card-title">Suno Voice Guides</span>
+        <span class="card-desc">Voice archetypes and pacing rules</span>
+      </div>
+      <span class="badge">GUIDE</span>
+    </a>
+  </div>
+
+  <!-- VAULT SECTION -->
+  <div class="section-title">The Master Vault</div>
+  <div class="grid">
+    <a href="./vault/public_architecture.md" class="card">
+      <div>
+        <span class="card-title">Public Architecture</span>
+        <span class="card-desc">5,880-Year Wheel, 7,000-Year Day, Fractals</span>
+      </div>
+      <span class="badge">PUBLIC</span>
+    </a>
+
+    <a href="./vault/witness_statement.md" class="card">
+      <div>
+        <span class="card-title">The Witness Statement</span>
+        <span class="card-desc">To the Court of Universal Sovereignty</span>
+      </div>
+      <span class="badge">PUBLIC</span>
+    </a>
+
+    <a href="./vault/private_dates.md" class="card">
+      <div>
+        <span class="card-title">The Date Mathematics</span>
+        <span class="card-desc">144,000 hours, 14,400 days, 105 days</span>
+      </div>
+      <span class="private-badge">PRIVATE</span>
+    </a>
+
+    <a href="./vault/lexical_standard.md" class="card">
+      <div>
+        <span class="card-title">Lexical Standard (Strong's)</span>
+        <span class="card-desc">Yom, Stauros, Bereshith, Mal'akh</span>
+      </div>
+      <span class="badge">PUBLIC</span>
+    </a>
+  </div>
+
+  <!-- PRODUCTION SECTION -->
+  <div class="section-title">Production & Publishing</div>
+  <div class="grid">
+    <a href="./production/shot_list_ep1.md" class="card">
+      <div>
+        <span class="card-title">Episode 1 Shot List</span>
+        <span class="card-desc">Image mapping and visual cues</span>
+      </div>
+      <span class="badge">VIDEO</span>
+    </a>
+
+    <a href="./production/youtube_metadata.md" class="card">
+      <div>
+        <span class="card-title">YouTube Metadata</span>
+        <span class="card-desc">Titles, descriptions, tags, hashtags</span>
+      </div>
+      <span class="badge">PUBLISH</span>
+    </a>
+
+    <a href="./production/channel_setup.md" class="card">
+      <div>
+        <span class="card-title">Channel Setup Guide</span>
+        <span class="card-desc">Branding, bio, and upload defaults</span>
+      </div>
+      <span class="badge">SETUP</span>
+    </a>
+  </div>
+
+  <!-- ASSETS SECTION -->
+  <div class="section-title">Visual Assets</div>
+  <div class="grid">
+    <a href="./assets/images/" class="card">
+      <div>
+        <span class="card-title">Image Library</span>
+        <span class="card-desc">Thumbnails, dream sequences, timeline graphics</span>
+      </div>
+      <span class="badge">FOLDER</span>
+    </a>
+  </div>
+
+  <br><br>
+  <div class="subtitle" style="font-size: 0.8em; margin-top: 40px;">
+    "Your King, Jesus Christ, will be arriving soon."
+  </div>
+
+</body>
+</html>
